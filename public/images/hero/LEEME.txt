@@ -1,0 +1,7 @@
+Colocá acá 3 imágenes PNG con fondo transparente, misma luz/ángulo/escala entre sí:
+
+  termo.png   -> termo matero
+  yerba.png   -> paquete de yerba mate Baldo 1kg (de pie, no yerba suelta)
+  mate.png    -> mate con bombilla y yerba servida
+
+Los prompts sugeridos para generarlas están en la conversación con Claude.
