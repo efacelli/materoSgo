@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext.jsx";
 import {
   formatPrice,
@@ -46,18 +47,22 @@ export default function ProductCard({ product }) {
 
   return (
     <article className="product-card fade-in">
-      <div className="product-image-wrap">
-        <img
-          src={currentImage}
-          alt={product.name}
-          className="product-image"
-          loading="lazy"
-        />
-        <span className="product-category-tag">{categoryLabel}</span>
-        {outOfStock && <span className="product-stock-tag">Sin stock</span>}
-      </div>
+      <Link to={`/producto/${product.id}`} className="product-card-link">
+        <div className="product-image-wrap">
+          <img
+            src={currentImage}
+            alt={product.name}
+            className="product-image"
+            loading="lazy"
+          />
+          <span className="product-category-tag">{categoryLabel}</span>
+          {outOfStock && <span className="product-stock-tag">Sin stock</span>}
+        </div>
+      </Link>
       <div className="product-info">
-        <h3 className="product-name">{product.name}</h3>
+        <Link to={`/producto/${product.id}`} className="product-name-link">
+          <h3 className="product-name">{product.name}</h3>
+        </Link>
         {product.description && (
           <p className="product-desc">{product.description}</p>
         )}

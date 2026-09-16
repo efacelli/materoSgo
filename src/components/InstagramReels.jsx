@@ -10,8 +10,8 @@
 import { useEffect } from "react";
 
 const REELS = [
-  "https://www.instagram.com/reel/REEMPLAZAR_1/",
-  "https://www.instagram.com/reel/REEMPLAZAR_2/",
+  "https://www.instagram.com/reel/DdPxuQWtPrM/?stkn=MWYzbzM3amNrdDlqOA==",
+  "https://www.instagram.com/reel/Dc9pi-Rt51o/?stkn=M3lhenVrYTE4NGV2",
 ];
 
 export default function InstagramReels() {
@@ -39,7 +39,7 @@ export default function InstagramReels() {
     <section className="container section" id="concentracion">
       <div className="section-head">
         <h2 className="section-title">Nuestros últimos videos</h2>
-        <p className="section-sub">Así se vivió el último encuentro</p>
+        <p className="section-sub"></p>
       </div>
 
       <div className="reels-grid">

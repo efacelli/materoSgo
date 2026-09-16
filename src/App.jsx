@@ -3,7 +3,8 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
-import Category from "./pages/Category.jsx";
+import Stock from "./pages/Stock.jsx";
+import ProductDetail from "./pages/ProductDetail.jsx";
 import CartPage from "./pages/CartPage.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
@@ -23,7 +24,8 @@ export default function App() {
       <main className="app-main">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/:category" element={<Category />} />
+          <Route path="/producto/:id" element={<ProductDetail />} />
+          <Route path="/stock" element={<Stock />} />
           <Route path="/carrito" element={<CartPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
